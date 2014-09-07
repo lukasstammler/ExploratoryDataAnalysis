@@ -9,6 +9,5 @@
 load("./EPCdata.RData")
 
 png(file = "./plot2.png", width = 480, heigh = 480)
-with(data, plot(datetime, Global_active_power, type="n", xlab="", ylab="Global Active Power (kilowatts)"))
-lines(data$datetime, data$Global_active_power)
+with(data, plot(datetime, Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)"))
 dev.off()
